@@ -5,11 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-<a href="/">Show All Courses</a><br />
-Title :<span th:text="${course.title}" ></span><br />
-Instructor :<span th:text="${course.instructor}" ></span><br />
-Description :<span th:text="${course.description}" ></span><br />
-Credits :<span th:text="${course.credit}" ></span><br />
-<a th:href="@{/delete/{id}(id=${course.id})}">Delete this course</a>
+<a href="/">Show All Todos</a><br />
+ID :<span th:text="${todo.id}" ></span><br />
+Task Name :<span th:text="${todo.taskname}" ></span><br />
+Due Date :<span th:text="${todo.duedate}" ></span><br />
+Priority :<span th:text="${todo.priority}" ></span><br />
+<a th:href="@{/delete/{id}(id=${todo.id})}">Delete this todo</a>
 </body>
 </html>
